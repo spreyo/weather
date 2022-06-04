@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans&display=swap');
+
+body {
+  /* background-color: aliceblue; */
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out
+}
+
+.weatherIcon{
+  width: 70vw;
+  height: 70vw;
+  /* animation: inflate 5s infinite linear */
+  user-select: none;
+  
+}
+.weatherStatus{
+  text-align: center;
+  
+  
+}
+.degrees{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16vw;
+  color: #E63E6D;
+  cursor:pointer;
+  margin:auto;
+  margin-top: 1vw;
+  user-select: none;
+  animation: inflate 5s ease;
+  
+}
+
+.condition{
+  font-family: 'Spline Sans', sans-serif;
+  color: #a73052;
+  font-size: 10vw;
+}
+
+.loading{
+  display: flex;
+  text-align: center;
+  margin:auto;
+  width: 50vw;
+  height: 50vw;
+  justify-content: center;
+  align-items: center;
+
+  
+/* position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  animation: load 2s infinite linear;
+}
+
+@keyframes onCreate {
+  from{
+
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load {
+  to{
+    transform: rotate(900deg);
+  }
+  
+}
+
+@keyframes inflate {
+  to{
+      transform: scale(100%);
+  }
+
+  
+}
